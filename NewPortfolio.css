@@ -1,0 +1,1411 @@
+
+/*-------------------------------------------------BACK CARD ------------------------------------------*/
+.hobby-button {
+  background: transparent;
+  border: 1px solid #ff4d29;   /* change color if you want */
+  border-radius: 999px;     /* pill shape */
+  padding: 8px;
+  cursor: pointer;
+  
+}
+
+.behind-section {
+    width: 100%;
+    padding: 80px 60px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    
+}
+
+.behind-label{
+    color:#ff4d29;
+    font-size: 25px;
+    
+}
+
+.behind-left {
+    flex: 0.5;
+}
+
+.behind-main-title {
+    font-size: 4rem; 
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.behind-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    max-width: none; 
+}
+
+.behind-desc {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    
+    /* THE FIX: Spreading the text out */
+    width: 150%;             
+    max-width: 900px;        
+    padding: 20px 40px;      
+    
+    background: rgba(255, 255, 255, 0.03); 
+    border-radius: 0 30px 30px 0; 
+    border-left: 4px solid rgb(97, 253, 19); 
+    
+    font-weight: 300;
+    font-style: italic;
+    box-shadow: 15px 0 30px rgba(196, 96, 96, 0.1);     
+    
+}
+
+.behind-footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 25px;               
+}
+
+.footer-text p {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.muted-text {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+.btn-get-touch {
+    background-color: #ff4d29;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: left;
+    padding: 8px 8px 8px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    gap: 15px;
+    transition: transform 0.2s;
+    
+}
+
+.white-circle {
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-arrow {
+    color: #ff4d29;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+    transform: translateY(-1px);
+}
+
+.btn-get-touch:hover {
+    transform: scale(1.05);
+}
+
+.background-card {
+    height: 1500px;
+    padding-bottom: 60px; 
+}
+
+.hobbies-section {
+    width: 100%;
+    padding:  20px 20px 20px;
+    color: white;
+    margin-left: 80px; 
+    padding: 20px 60px 20px 20px;
+    max-width: 1050px;
+}
+
+.hobbies-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hobbies-list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+/* Hover effect on github and certiport*/
+.hobby-button:hover {
+    background-color:#ff4d29;
+}
+
+
+.hobby-item {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.hobbies-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); 
+    gap: 30px;
+    justify-content: flex-start; 
+}
+
+.hobby-card {
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    border-radius: 30px;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    border-left: 5px solid  #0d0d0d;
+    
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease, transform 0.4s ease;
+    border-radius: 15px;
+}
+
+/* Hover effect:*/
+.hobby-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/*-------------------------------------------------MIDDLE CARD ------------------------------------------*/
+.trust-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background: transparent; 
+    margin-top: -30px;
+}
+
+.trust-text {
+    color: rgb(246, 241, 241);
+    font-size: 0.8rem;
+    max-width: 150px;
+    line-height: 1.4;
+    font-weight: 500;
+   
+}
+
+.brand-logos {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    
+}
+
+.brand {
+    color: rgb(246, 241, 241);
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    filter: whitscale(100%); /* Makes logos look professional and uniform */
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    
+}
+
+.brand:hover {
+    opacity: 1;
+}
+
+.brand span {
+    font-size: 1.4rem;
+}
+/*-------------------------------------------------FRONT CARD TOP MOST------------------------------------------*/
+.content-layout {
+    display: flex;
+    align-items: center;      /* Vertically centers text with image */
+    justify-content: flex-start;
+    gap: 80px;                /* Space between profile and text */
+    margin-top: -30px;
+    
+}
+
+.saying-container {
+    flex: 1;                  /* Allows text to take up remaining space */
+    text-align: left;
+}
+
+.saying-title {
+    color: #ffffff;
+    font-size: 3.5rem;        /* Professional large size */
+    font-weight: 800;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    min-height: 120px; 
+
+}
+
+.saying-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.2rem;
+    max-width: 500px;         /* Forces the wrap seen in the design image */
+    line-height: 1.5;
+}
+
+/* Styling for the typed text */
+.typing-text {
+    color: #ff4d29; /* Using your signature orange color for the dynamic part */
+    text-transform: uppercase;
+}
+
+/* The blinking cursor effect */
+.cursor {
+    color: #ffffff;
+    font-weight: 200;
+    animation: blink 0.7s infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* --------------------------AVAILABILITY TAG---------------------------------- */
+.availability-tag {
+    width: 250px;
+    margin-right: -40px;
+    position: absolute;
+    top: 120px; 
+    right: -0px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    backdrop-filter: blur(5px);
+
+     /* THE GLASSMORPHISM (Polymorphism) EFFECT */
+    background: rgba(255, 255, 255, 0.05); /* Very transparent white */
+    backdrop-filter: blur(12px);           /* The "frosting" effect */
+    -webkit-backdrop-filter: blur(12px);    /* Support for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* The thin glass edge */
+    border-radius: 100px;                  /* Pill shape */
+    
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    
+    /* Soft shadow for depth */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #00ff88; /* Success Green */
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(0, 255, 136, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 255, 136, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+}
+
+/*-------------------------------------------------FRONT CARD NAVIGATION BAR------------------------------------------*/
+/* Navbar Container */
+.navbar {
+    width: calc(100% + 80px);
+    margin: -40px -40px 40px -40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px; 
+    background: transparent;
+    border-bottom: 3px solid rgba(201, 226, 230, 0.1);
+    
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto; 
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+.cta-button {
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    height: 50px;
+    width: 120px;
+    align-items: center;
+    padding: 6px 6px 6px 20px; 
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    gap: 12px;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+
+.logout-icon-bg{
+    background: #ff4d29;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-icon {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: -2px; /* Visual alignment fix */
+    font-size: 1rem;
+    transform: translateY(-1px); /* Keep the manual nudge for mobile */
+}
+
+/*-----------------------PROFILE PICTURE OF jhonepude in THE TOP LAYER CARD-----------------------------------------*/
+
+.profile-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 350px; /* Adjust based on your card height */
+    margin-top: 60px;
+    perspective: 1000px; /* Adds 3D depth */
+}
+
+.profile-card {
+    position: relative;
+    width: 280px;  
+    height: 320px; 
+}
+
+/* The Rectangular Frame */
+.rect-bg {
+    position: absolute;
+    bottom: 20;
+    width: 100%;
+    height: 88%; /* Slightly shorter so the head can pop out the top */
+    background: #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden; /* Clips the BG and Light Strip */
+    border: 2px solid rgba(255, 77, 41, 0.5);
+    z-index: 1;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.rect-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(-22px); /* Negative value moves it UP */
+    opacity: 0.8;
+}
+
+/* The Person on top */
+.portrait-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 20px;
+    transform: translateX(-50%) scale(0.9);
+    width: 110%; /* Slightly wider to overlap edges */
+    z-index: 2;
+    transition: transform 0.4s ease;
+    pointer-events: none; /* Allows hover to trigger on the card */
+}
+
+/* Light Strip Animation */
+.light-sweep {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transform: skewX(-25deg);
+    animation: moveLight 3s infinite;
+}
+
+@keyframes moveLight {
+    0% { left: -100%; }
+    50% { left: 150%; }
+    100% { left: 150%; }
+}
+
+/* --- HOVER EFFECTS --- */
+
+.profile-card:hover .rect-bg {
+    transform: translateY(5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: #ff4d29;
+}
+
+.profile-card:hover .portrait-img {
+    /* When hovered, the person scales up and moves up, "clipping" through the top boundary */
+    transform: translateX(-50%) scale(1.05) translateY(-10px);
+}
+
+/*--------------------------------------------------CARDS------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    height: 1500px;   
+    width: 500;
+    background-color:#0349ed;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Layer 1: The Back layer */
+.background-card {
+    width: 100%;
+    max-width: 1300px; 
+    height: 1360px;   
+    background: #0d0d0d;
+    overflow: visible; 
+}
+
+/* Layer 2: The Middle layer */
+.card {
+    width: 100%;     
+    height: 590px;    
+    background: #141414;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* Layer 3: The Top layer  */
+.card-content {
+    width: 100%;       
+    height: 500px;     
+    background: linear-gradient(
+        to right, 
+        rgba(129, 67, 30, 1) 0%, 
+        rgb(109, 59, 32) 100%
+    );
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 40px;
+    box-shadow: inset 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.brand img {
+    width: 25px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+/*----------------------------NEXT CARD PAGE TOP LAYER-------------------------------------*/
+.next-card1-separator {
+    margin: 80px auto 60px auto;
+    width: auto;
+    height: 585px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    
+    /* Perfect Flex Layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px; 
+    overflow: hidden;
+}
+
+/* -- LEFT SIDE: CONTACT AREA -- */
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    flex: 1.2; /* Takes slightly more space */
+}
+
+.contact-me {
+    color:#ff4d29;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin-bottom: 20px; /* Space between title and input */
+}
+.accent-text{
+    color: white;
+}
+
+/* --THE SQUARE TRANSPARENT INPUT --- */
+.type-here {
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    padding: 18px 25px;
+    font-size: 1.1rem;
+    color: white;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.type-here:focus {
+    border-color: #ff4d29; /* Entire square glows orange */
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.type-here::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+}
+
+/* --- SEND BUTTON--- */
+.send-btn {
+    background: #ff4d29;
+    color: white;
+    border: none;
+    padding: 12px 30px; /* Added height */
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    
+    display: flex;       /* Enables logo-text alignment */
+    align-items: center;
+    gap: 12px;           /* Space between icon and text */
+    
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(255, 77, 41, 0.2);
+}
+
+.send-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: 0 15px 30px rgba(255, 77, 41, 0.4);
+}
+
+.send-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ------------------ MIDDLE QUOTE DESIGN ----------------- */
+.middle-quote-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;                /* Centers it automatically */
+    height: 80%;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.vertical-line {
+    width: 1px;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.15), transparent);
+}
+
+.q-mark {
+    display: block;
+    color: #ff4d29;
+    font-family: serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    opacity: 0.6;
+    text-align: center; /* Add this to center both marks */
+    width: 100%;        /* Ensure it takes full width to allow centering */
+}
+
+/* Add this to ensure the container is centered */
+.quote-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.quote-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 0; /* Add some spacing so it doesn't touch the marks */
+}
+
+/* --- RIGHT SIDE: PROFILE CONTAINER --- */
+.pop-profile-container {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.pop-profile-wrapper {
+    position: relative;
+    width: 320px;
+    height: 380px;
+    cursor: pointer;
+}
+
+.pop-frame {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85%;
+    background: #161616;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 77, 41, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.pop-subject {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%) scale(0.92);
+    transform-origin: bottom center;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 3;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 8%);
+    mask-image: linear-gradient(to top, transparent 0%, black 8%);
+}
+
+/* Profile Hover Effects */
+.pop-profile-wrapper:hover .pop-subject {
+    transform: translateX(-50%) scale(1.05) translateY(-20px);
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+}
+
+/* 2. The Box/Frame Tilts */
+.pop-profile-wrapper:hover .pop-frame {
+    transform: translateY(5px) rotateX(3deg);
+    border-color: #ff4d29;
+}
+
+.pop-name {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-top: 20px;
+    background: linear-gradient(to right, #fff, #ff4d29);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-links-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-pill {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 18px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.pill-logo {
+    width: 18px;
+    height: 18px;
+    color: #ff4d29; /* Matches theme */
+}
+
+
+/*--------------------------------NEXT CARD PAGE SECOND LAYER----------------------------------*/
+.next-card2 {
+  margin: 60px auto;
+  width: auto;
+  height: 750px;
+  padding: 0px;
+  background:#1a1a1a;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: -80px;
+  
+}
+
+
+.projects-header {
+    text-align: left;
+    margin-left: 64px;
+   margin-top: -20px;
+}
+
+.section-tag {
+    color: #ff4d29;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+ 
+    
+}
+
+.section-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.accent-orange {
+    color: #ff4d29;
+}
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background: #ff4d29;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+/* PROJECTS AND ACHIVEMENTS LINKS CONTAINER */
+.portfolio-links {
+    display: flex;
+    gap: 15px;
+    margin-top: -70px;
+    margin-left: 750px;
+}
+
+/* THE BUTTON STYLE */
+.work-link {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    backdrop-filter: blur(10px);
+}
+
+.work-icon {
+    width: 20px;
+    height: 20px;
+    color: #ff4d29; /* Theme orange */
+    transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECTS */
+.work-link:hover {
+    background: #ff4d29;
+    border-color: #ff4d29;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 77, 41, 0.3);
+}
+
+.work-link:hover .work-icon {
+    color: white;
+    transform: rotate(12deg) scale(1.1);
+}
+
+
+/*-----------------------------------------MOBILE MODE--------------------------------------------------*/
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    /* Slightly shorter heights for tablets */
+    .background-card { height: 700px; }
+    .card { height: 550px; }
+    .card-content { height: 400px; }
+}
+/*-------------------------------- Cards in Mobile mode----------------------------------------*/
+/*-------------------------------- Cards in Mobile mode----------------------------------------*/
+/*-------------------------------- Cards in Mobile mode----------------------------------------*/
+@media (max-width: 768px) {
+    /* Mobile view: reduce heights and corner curves */
+    .background-card { 
+        height: auto !important; 
+        max-height: 1600px;
+    }
+    .card { 
+        height: 700px; 
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .card-content { 
+        height: 550px; 
+        padding: 20px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .content-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    /*----------------FRONT CARD MOBILE MODE------------------*/
+    .saying-container {
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .saying-title {
+        font-size: 2.2rem; /* Shrink font for mobile */
+        letter-spacing: -1px;
+        min-height: 80px;
+    }
+
+    .saying-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .availability-tag {
+        /* 1. Reset the position for mobile */
+        position: absolute;
+        top: 15px;      /* Moves it closer to the top edge */
+        right: 15px;    /* Moves it closer to the right edge */
+    
+        
+        /* 2. Fix the size */
+        width: auto;             /* Removes the 250px width so it doesn't cover the screen */
+        margin-right: -10px;         /* Removes the negative margin hack */
+        margin-top: 80px;
+        padding: 12px 12px;       /* Slimmer padding */
+        padding-right: 10px;
+        border-right: 4px solid #ffcc00;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        
+        /* 3. Scale down the text */
+        font-size: 0.80rem !important; /* Smaller text for small screens */
+        letter-spacing: 0.5px;
+        
+        /* 4. Ensure it stays on top of everything */
+        z-index: 99;
+        
+        /* 5. Adjust the dot size for mobile */
+        gap: 6px; 
+    }
+    
+
+    
+   /*------------------Middle Card Mobile mode--------------------------------*/
+    .trust-bar {
+        flex-direction: column; /* Label on top, logos on bottom */
+        align-items: flex-start; 
+        padding: 25px 20px;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .trust-text {
+        font-size: 0.70rem;
+        margin-bottom: 5px;
+        margin-left: 136px;
+        
+        
+    }
+
+    .brand-logos {
+        width: 100%;
+        gap: 25px; /* Tighter gap for mobile scrolling */
+        overflow-x: auto; /* Enables swipe left/right */
+        padding-bottom: 5px;
+        padding-left: 5px;
+        /* Custom scrollbar hiding */
+        scrollbar-width: none; 
+        -ms-overflow-style: none;
+        
+        
+    }
+
+    .brand-logos::-webkit-scrollbar {
+        display: none;
+    }
+
+    .brand {
+        flex-shrink: 0; /* Prevents text from squishing while scrolling */
+        font-size: 0.9rem;
+    }
+
+    .brand img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /*------------------Nav bar Mobile mode and TOP CARD Mobile mode--------------------------------*/
+    .navbar {
+        width: calc(100% + 40px); /* Matches mobile card-content padding */
+        margin: -20px -20px 20px -20px;
+        padding: 15px;
+        
+    }
+
+    .logo {
+        font-size: 1.1rem;
+        flex-shrink: 0; /* Prevents logo from squishing */
+    }
+
+    .nav-links {
+        gap: 9px; /* Reduced gap between Home, About, Projects */
+        margin-right: 9px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem; /* Smaller text for mobile */
+    }
+
+    .cta-button {
+        padding: 4px 3px 4px 12px; /* Slimmer button */
+        font-size: 0.60rem;
+        height: 30px;
+        width: 80px;
+    }
+
+    .logout-icon-bg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .logout-icon{
+        padding-top: 3px;
+        font-size: 0.55rem;
+        transform: translateY(-1px); /* Keep the manual nudge for mobile */
+    }
+
+    .profile-card {
+        width: 230px;
+        height: 280px;
+    }
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px; /* Adjust based on your card height */
+        margin-top: 100px;
+        perspective: 1000px; /* Adds 3D depth */
+    }
+    /*-----------------------BACK CARD MOBILE MODE-----------------------------*/
+
+     .background-card { 
+        height: auto !important; 
+        /*----------------------3rd card adjust black background size-----------------------------*/
+        min-height: 2100px;  
+         /*----------------------3rd card adjust black background size-----------------------------*/
+        overflow: visible !important;  
+        padding-bottom: 100px; 
+    }
+
+    body {
+        height: auto !important;
+        overflow-y: auto !important;
+    }
+
+    .card { height: auto; 
+        min-height: 
+        600px; 
+    }
+    .card-content { height: auto; 
+        min-height: 480px; 
+        padding: 25px; }
+
+    .behind-section {
+        flex-direction: column; 
+        padding: 40px 25px;
+        gap: 30px;
+        margin-left: -20px;
+    }
+
+    .behind-main-title {
+        font-size: 2.5rem; 
+         margin-left: 10px;
+    }
+
+    .behind-desc {
+        font-size: 1.2rem;         /* Slightly larger for readability */
+        line-height: 1.8;           /* More "air" between lines */
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 50px;
+        margin-right: 20px;
+        
+        /* THE FIX: Remove the rigid rectangle look */
+        max-width: 350px;           /* Prevents the text from stretching too wide */
+        padding: 25px 30px;
+        background: rgba(255, 255, 255, 0.03); /* Extremely subtle "glass" background */
+        border-radius: 0 30px 30px 0; /* Rounded on the right side */
+        border-left: 4px solid rgb(97, 253, 19); /* Your signature green line */
+        
+        /* Softens the shape */
+        box-shadow: 15px 0 30px rgba(0,0,0,0.1);
+        font-weight: 300;           /* Makes it look more elegant */
+        font-style: italic;      
+    }
+
+    .behind-right {
+        max-width: 100%;
+    }
+
+   .behind-label{
+        margin-left: 10px;
+   }
+
+    /* Fixed Button Alignment - Removed the margin-left hacks */
+    .behind-footer {
+        align-items: flex-start;
+        gap: 20px;
+        margin-left: 10px;
+    }
+
+    .btn-get-touch {
+        width: fit-content; 
+        margin: 0; 
+        padding: 8px 8px 8px 20px;
+    }
+
+    /* Hobbies Mobile */
+    .hobbies-section {
+        padding: 40px 2px;
+        margin-left: 30px;
+    }
+
+    .hobbies-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hobbies-gallery {
+        display: flex; /* Changed from grid to flex for sliding */
+        gap: 20px;
+        width: max-content; /* Allows the container to be wide */
+        animation: scrollLeft 20s linear infinite; /* Automatic movement */
+        padding-left: 20px;
+    }
+
+    .hobby-card {
+        width: 280px; /* Fixed width for sliding items */
+        flex-shrink: 0; /* Prevents images from squishing */
+        aspect-ratio: 16 / 9;
+        border-radius: 25px;
+        border-radius: 0 25px 25px 0;
+        border-left: 4px solid #ffcc00;
+        padding-left: 20px;
+        
+       
+    }
+
+    /* Class to stop the animation */
+    .hobbies-gallery.paused {
+        animation-play-state: paused;
+    }
+
+    /* Animation logic */
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%); /* Moves left */
+        }
+    }
+
+    .hobbies-section {
+        overflow: hidden; 
+        padding: 20px 0; /* Adjust padding for clean look */
+        margin-top: -60px;
+    }
+
+/*----------------------------NEXT CARD MOBILE MODE-----------------------------*/
+
+    /*-------NEXT CARD PAGE FIRST TOP LAYER------*/
+    .next-card1-separator {
+    margin: -30px auto;
+    margin-right: -20px;
+    width: auto;             
+    height: auto;           
+    display: flex;
+    flex-direction: column; 
+    /* FIX: Reduced top padding from 40px to 15px to move everything up */
+    padding: 15px 20px 60px 20px; 
+    gap: 40px;              
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    margin-left: -20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    }
+
+    /* 1. PROFILE (STAYS ON TOP) */
+    .pop-profile-container {
+        order: 1;               
+        margin-left: 0;         
+        /* closer to the top edge */
+        margin-top: -10px;      
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 2. QUOTE (MOVE TO MIDDLE) */
+    .middle-quote-area {
+        order: 2;               
+        margin-left: 0;         
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ensures the whole area is centered */
+    }
+
+    /* FIX: Aligning the Quotation Marks */
+    .q-mark {
+        display: block !important; /* Overrides any other display settings */
+        text-align: center !important; /* Forces the symbol to the center */
+        width: 100%;
+        font-size: 3rem;
+        margin: 0 auto;
+        line-height: 1;
+    }
+
+    .quote-content p {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* 3. MESSAGE AREA (MOVE TO BOTTOM) */
+    .contact-area {
+        order: 3;               
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* --- MOBILE REFINEMENTS --- */
+
+    .contact-me {
+        font-size: 2.2rem;      
+        margin-bottom: 20px;
+        position: static;       
+        margin-top: 40px;
+    }
+
+    .type-here {
+        width: 100%;
+        max-width: 100%;        
+        padding: 15px;
+    }
+
+    .send-btn {
+        margin-left: 0;         
+        width: 100%;            
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .vertical-line {
+        width: 60px;            
+        height: 2px;
+        margin: 15px auto;
+    }
+
+    .pop-profile-wrapper {
+        width: 280px;           
+        height: 330px;
+    }
+
+    /* Profile Hover Effects */
+    .pop-profile-wrapper:hover .pop-subject {
+        transform: translateX(-50%) scale(1.05) translateY(-20px);
+        filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+    }
+
+    /* 2. The Box/Frame Tilts */
+    .pop-profile-wrapper:hover .pop-frame {
+        transform: translateY(5px) rotateX(3deg);
+        border-color: #ff4d29;
+    }
+
+    .pop-name {
+        font-size: 1.8rem;
+        margin-left: 0;         
+        margin-top: 15px;
+    }
+
+    .contact-links-row {
+        margin-left: 0;         
+        flex-wrap: wrap;        
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-pill {
+        padding: 8px 15px;      
+        font-size: 0.75rem;
+    }
+
+    /*-------------------------NEXT CARD PAGE SECOND TOP LAYER------------------------*/
+    .next-card2 {
+        padding: 40px 20px;
+        align-items: center; /* Centers header for mobile */
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -30px;
+
+    }
+
+  
+    .projects-header {
+        text-align: center;
+        margin-left: 0;           /* Resets desktop 64px margin */
+        margin-top: 40px;
+        width: auto;
+    }
+
+    .section-tag {
+        justify-content: center;  /* Centers the 'Showcase' text */
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;        /* Smaller for mobile screens */
+        line-height: 1.2;
+    }
+
+    .title-underline {
+        margin: 15px auto 0 auto; /* Centers the orange bar */
+    }
+
+    /* RESETTING THE LINKS FOR MOBILE */
+    .portfolio-links {
+        display: flex;
+        flex-direction: column;   /* Stacks Github and Certiport buttons */
+        gap: 12px;
+        margin-top: 30px;         /* Gives space under the title */
+        margin-left: 0;           /* Resets desktop 750px margin */
+        width: 100%;              /* Allows buttons to be full width */
+    }
+
+    .work-link {
+        width: 100%;              /* Full width for easier tapping */
+        justify-content: center;  /* Centers text and icon inside button */
+        padding: 14px;
+    }
+
+    .work-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+

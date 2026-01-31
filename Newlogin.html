@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Newlogin.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="title">Login</h2>
+            <form class="form">
+                <label class="label">Email</label>
+                <input type="username" id ="username" class="input" placeholder="Enter your email">
+                <label class="label" >Password</label>
+                <input type="password" id = "password" class="input" placeholder="Enter your passowrd">
+                
+                <p class = "errorMsg" id="errorMsg">
+                    Please enter both email and password.
+                </p>
+
+                <button class="btn" type="submit" onclick=" return btn_login()">Login </button>
+            </form>
+
+            <p class="text">
+                Don't have an account? <a href="Newregister.html" class="link">Register</a>
+            </p>
+        </div>
+    </body>
+    </html>
+
+    <script>
+        function btn_login(){
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const errorMessage = document.getElementById("errorMsg");
+
+            if (username === "admin" && password === "admin123") {
+        
+                window.location.href = "NewPortfolio.html";
+                return false;
+            } else {
+            
+                errorMessage.style.display = "block";
+                errorMessage.textContent = "Invalid username or password";
+                return false;
+            }
+        }
+    </script>
